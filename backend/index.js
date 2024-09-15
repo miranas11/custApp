@@ -30,6 +30,7 @@ const env = "PROD";
 
 const mongourl =
     "mongodb+srv://anasmir24:6PxSy8DxWwpHWH7p@custcluster.xctwo.mongodb.net/?retryWrites=true&w=majority&appName=custCluster";
+const MONGO_URI = "mongodb://localhost:27017/custApp";
 
 env === "PROD"
     ? mongoose
@@ -41,7 +42,7 @@ env === "PROD"
               console.log("ERROR");
           })
     : mongoose
-          .connect(process.env.MONGO_URI)
+          .connect(MONGO_URI)
           .then(() => {
               console.log("Connection Open LOCAL");
           })
@@ -49,7 +50,7 @@ env === "PROD"
               console.log("ERROR");
           });
 
-const PORT = process.env.PORT || 5000;
+const PORT = 5000;
 
 app.use("/api/auth", authRoutes);
 app.use("/api/services", serviceRoutes);
