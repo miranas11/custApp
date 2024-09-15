@@ -9,7 +9,6 @@ const JWT_SECRET = "secret";
 const googleLogin = async (req, res) => {
     try {
         const { token } = req.body;
-        console.log(token);
 
         const ticket = await client.verifyIdToken({
             idToken: token,

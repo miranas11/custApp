@@ -12,7 +12,7 @@ const Login = () => {
     useEffect(() => {
         const token = localStorage.getItem("token");
         if (token) {
-            navigate("/");
+            navigate("/home");
         }
     }, [navigate]);
 
@@ -23,7 +23,7 @@ const Login = () => {
 
             if (response.success) {
                 localStorage.setItem("token", response.token);
-                navigate("/");
+                navigate("/home");
             }
         } catch (error) {
             console.error("Login failed:", error);

@@ -10,7 +10,7 @@ const SplashScreen = () => {
     useEffect(() => {
         setTimeout(() => {
             setIsLoading(false);
-            navigate("/login"); // Redirect to the login page after 3 seconds
+            navigate("/login");
         }, 3000);
     }, [navigate]);
 

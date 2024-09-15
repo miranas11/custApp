@@ -7,16 +7,18 @@ import Home from "./components/Home";
 import Navbar from "./components/utils/Navbar";
 import MyBookings from "./components/MyBookings";
 import StripePayment from "./components/StripePayement";
+import SplashScreen from "./components/SplashScreen";
 
 const App = () => {
     return (
         <Router>
             <Routes>
-                {/* Login Route */}
+                <Route path="/" element={<SplashScreen />} />
+
                 <Route path="/login" element={<Login />} />
 
                 <Route
-                    path="/"
+                    path="/home"
                     element={
                         <ProtectedRoute>
                             <>
