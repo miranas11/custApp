@@ -1,0 +1,152 @@
+/* ServiceDetails.css */
+
+/* General container for service details */
+.service-details-container {
+    padding: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background-color: #f4f5f7; /* Light background */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+    color: #333; /* Darker text color for contrast */
+}
+
+/* Service image styling */
+.service-details-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Image shadow for depth */
+}
+
+/* Title styling */
+.service-details-title {
+    font-size: 2.2rem;
+    color: #2c3e50; /* Dark slate blue for title */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Description styling */
+.service-description {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #555; /* Medium gray for description */
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+/* Location and price styling */
+.service-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    color: #7f8c8d; /* Light gray for info text */
+    margin-bottom: 30px;
+}
+
+.service-info-item {
+    margin-right: 20px;
+    font-weight: 600;
+}
+
+/* Calendar styling */
+.service-calendar-container {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.service-calendar-title {
+    font-size: 1.5rem;
+    color: #34495e; /* Slightly darker color for section title */
+    margin-bottom: 20px;
+}
+/* ServiceDetails.css */
+
+/* Reviews section container */
+.service-reviews {
+    margin-top: 40px;
+}
+
+/* Reviews section title */
+.service-reviews-title {
+    font-size: 1.5rem;
+    color: #34495e;
+    margin-bottom: 20px;
+}
+
+/* Each review container */
+.review-container {
+    background-color: #f7f9fc; /* Light background for each review */
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+    border-left: 4px solid #2980b9; /* Accent color for reviews */
+}
+
+/* Review header containing the user and star rating */
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Review user name */
+.review-user {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Star rating container */
+.review-rating .star {
+    font-size: 1.2rem;
+    color: #f39c12; /* Bright yellow for stars */
+}
+
+/* Comment styling */
+.review-comment {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Review date styling */
+.review-date {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
+
+.book-service-container {
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center; /* Center the button */
+}
+
+.book-service-button {
+    padding: 12px 20px;
+    border-radius: 8px;
+    background-color: #28a745; /* Softer green */
+    font-weight: 500;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.book-service-button:hover {
+    background-color: #218838; /* Darker green on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Increased shadow on hover */
+}
+
+.book-service-button:active {
+    background-color: #1e7e34; /* Even darker green when active */
+    box-shadow: none;
+}

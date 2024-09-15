@@ -1,0 +1,124 @@
+/* Home.css */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    padding: 40px 0;
+    background-color: #f9f9f9; /* Light background */
+    font-family: "Arial", sans-serif;
+}
+
+/* SearchBar.css */
+.search-container {
+    display: flex;
+    flex-direction: row; /* Align items horizontally */
+    gap: 10px; /* Space between the inputs and button */
+    padding: 10px;
+    max-width: 100%; /* Take full width */
+    margin: 0 auto;
+    align-items: center; /* Align items vertically in the center */
+    background-color: #fff; /* White background for contrast */
+    border-radius: 8px; /* Subtle roundness */
+    border: 1px solid #e0e0e0; /* Light border for minimalism */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Minimal shadow */
+}
+
+.search-container input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 200px; /* Fixed width for inputs */
+    box-sizing: border-box;
+    background-color: #f7f7f7; /* Subtle input background */
+}
+
+.search-container input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.search-container button {
+    padding: 10px 20px; /* Adjust padding to make the button look balanced */
+    background-color: #333; /* Dark button for contrast */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-container button:hover {
+    background-color: #555; /* Slightly lighter hover effect */
+}
+
+/* ServiceList.css */
+.service-list {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.service-card {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    padding: 35px 50px;
+    transition: transform 0.2s ease;
+    align-items: center;
+    width: 100%;
+    box-shadow: none;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.service-card-content {
+    flex: 1;
+}
+
+.service-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.service-card p {
+    font-size: 1em;
+    color: #777;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.service-card a {
+    text-decoration: none;
+    background-color: #333; /* Dark link button */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.service-card a:hover {
+    background-color: #555; /* Slightly lighter hover effect */
+}
+
+.service-card-image {
+    width: 200px;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-left: 20px;
+    border: 1px solid #e0e0e0; /* Subtle border for images */
+}
