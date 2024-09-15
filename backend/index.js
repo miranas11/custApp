@@ -21,16 +21,30 @@ app.use(
     })
 );
 
-const PORT = process.env.PORT || 5000;
-try {
-    mongoose.connect(process.env.MONGO_URI, {});
-    console.log("MongoDB connected successfully");
+const env = "ENV";
 
-    const PORT = process.env.PORT || 5000;
-} catch (error) {
-    console.error("MongoDB connection error:", error);
-    process.exit(1);
-}
+const mongourl =
+    "mongodb+srv://anasmir24:6PxSy8DxWwpHWH7p@custcluster.xctwo.mongodb.net/?retryWrites=true&w=majority&appName=custCluster";
+
+env === "PROD"
+    ? mongoose
+          .connect(mongourl)
+          .then(() => {
+              console.log("Connection Open ATLAS");
+          })
+          .catch((e) => {
+              console.log("ERROR");
+          })
+    : mongoose
+          .connect(process.env.MONGO_URI)
+          .then(() => {
+              console.log("Connection Open LOCAL");
+          })
+          .catch((e) => {
+              console.log("ERROR");
+          });
+
+const PORT = process.env.PORT || 5000;
 
 app.use("/api/auth", authRoutes);
 app.use("/api/services", serviceRoutes);
