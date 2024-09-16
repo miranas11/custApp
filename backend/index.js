@@ -29,7 +29,7 @@ app.use(
 const env = "PROD";
 
 const mongourl =
-    "mongodb+srv://anasmir24:6PxSy8DxWwpHWH7p@custcluster.xctwo.mongodb.net/custApp?retryWrites=true&w=majority&appName=custCluster";
+    "mongodb+srv://anasmir24:6PxSy8DxWwpHWH7p@custcluster.xctwo.mongodb.net/?retryWrites=true&w=majority&appName=custCluster";
 
 const MONGO_URI = "mongodb://localhost:27017/custApp";
 
