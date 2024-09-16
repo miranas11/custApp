@@ -17,6 +17,7 @@ app.use(express.json());
 const allowedOrigins = [
     "http://localhost:3000",
     "https://cust-app-six.vercel.app",
+    "https://cust-app-git-hosted-miranas11s-projects.vercel.app/",
 ];
 
 app.use(
@@ -33,23 +34,12 @@ const mongourl =
 
 const MONGO_URI = "mongodb://localhost:27017/custApp";
 
-env === "PROD"
-    ? mongoose
-          .connect(mongourl)
-          .then(() => {
+ mongoose.connect(mongourl).then(() => {
               console.log("Connection Open ATLAS");
+          }).catch((e) => {
+             console.log("ERROR");
           })
-          .catch((e) => {
-              console.log("ERROR");
-          })
-    : mongoose
-          .connect(MONGO_URI)
-          .then(() => {
-              console.log("Connection Open LOCAL");
-          })
-          .catch((e) => {
-              console.log("ERROR");
-          });
+   
 
 const PORT = process.env.port || 5000;
 
