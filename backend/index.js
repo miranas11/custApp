@@ -51,7 +51,7 @@ env === "PROD"
               console.log("ERROR");
           });
 
-const PORT = 5000;
+const PORT = process.env.port || 5000;
 
 app.use("/api/auth", authRoutes);
 app.use("/api/services", serviceRoutes);
