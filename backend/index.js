@@ -34,12 +34,14 @@ const mongourl =
 
 const MONGO_URI = "mongodb://localhost:27017/custApp";
 
- mongoose.connect(mongourl).then(() => {
-              console.log("Connection Open ATLAS");
-          }).catch((e) => {
-             console.log("ERROR");
-          })
-   
+mongoose
+    .connect(mongourl)
+    .then(() => {
+        console.log("Connection Open ATLAS");
+    })
+    .catch((e) => {
+        console.log("ERROR");
+    });
 
 const PORT = process.env.port || 5000;
 
