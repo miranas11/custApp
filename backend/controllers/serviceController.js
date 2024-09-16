@@ -55,4 +55,8 @@ const getServiceById = async (req, res) => {
     }
 };
 
-module.exports = { searchServices, getAllServices, getServiceById };
+const test = (req, res) => {
+    res.json({ abc: "abc" });
+};
+
+module.exports = { searchServices, getAllServices, getServiceById, test };
